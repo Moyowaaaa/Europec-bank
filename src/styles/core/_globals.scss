@@ -1,0 +1,83 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+
+
+main{
+  position: relative;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  // scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  background-color: #EDEDED;
+  position: relative;
+  color: black;
+}
+
+@media screen and (min-width:1024px) {
+  html{
+      font-size: calc(100vw / 1440 * 16);
+  }
+
+}
+
+
+body {
+  perspective: 1px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+p {
+  line-height: 2rem;
+}
+img {
+  width: 100%;
+}
+section {
+  width: 100%;
+}
+button {
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+
+}
+
+.t{
+  position: relative;
+}
+
+
+
+::-webkit-scrollbar {
+
+  scroll-behavior: smooth;
+}
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 4px;
+  scroll-behavior: smooth;
+  background:black   
+  
+ 
+}
+
+::-webkit-scrollbar-thumb {
+ 
+  border-radius: 20px;
+  border: 3px solid var(--chakra-colors-primary);
+  height: 2px;
+  background: linear-gradient(180deg, #DBFF00 0%, #DBFF00 149%);
+}
+
+
+.highlightText{
+  background: #9DFA6F;
+}

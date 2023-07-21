@@ -1,0 +1,25 @@
+.navbar{
+    width: 100%;
+    
+    display: flex;
+    box-sizing: border-box;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+font-weight: 600;
+
+
+    &__logo-container{
+        img{
+            width: 5rem;
+        }
+    }
+
+
+    &__links-container{
+        display: flex;
+        gap: 1.8rem;
+        
+    }
+}

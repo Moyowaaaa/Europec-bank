@@ -1,0 +1,40 @@
+.subscribeSection {
+
+
+  padding: 8rem 5rem;
+
+  &__container {
+    width: 75%;
+   
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 130.7%;
+      max-width: 60rem;
+      text-align: center;
+    }
+
+    &--bullets-container {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      &__bullet {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+
+   
+  }
+}
