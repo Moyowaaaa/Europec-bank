@@ -20,6 +20,9 @@
     }
 
     &--bullets-container {
+   
+      width: 65%;
+      margin: auto;
       display: flex;
       gap: 2rem;
       align-items: center;
@@ -32,6 +35,32 @@
           height: 1.5rem;
           width: 1.5rem;
         }
+      }
+    }
+
+    &--input-container{
+      width: 65%;
+      margin: auto;
+      display: flex;
+      background-color: white;
+      border-radius: 3.5rem;
+ 
+      padding-left: 2rem;
+      
+      input{
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+       
+      }
+
+      button{
+        background-color: black;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 3.5rem;
+        min-width: 10rem;
       }
     }
 

@@ -1,0 +1,226 @@
+.showcaseSection {
+  
+   
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: black;
+    padding: 4rem 5rem;
+
+    &__finance-showcase-container{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      
+   
+
+        &--left-container{
+          
+            width: 40rem;
+            position: relative;
+
+            h1{
+                 font-size: 4rem;
+            font-family: 'cera-bold';
+            }
+
+
+            &__image-container{
+                margin-top: 2rem;
+                position: relative;
+                width: 100%;
+               
+                min-height: 40rem;
+                display: flex;
+
+                .skeleton{
+                    position: absolute;
+                    right:5rem;
+                    height:30rem;
+                    width:25rem
+                }
+
+
+                .card{
+                    height:30rem;
+                    width:30rem;
+                    position: absolute;
+                    top: 4rem;
+                    
+                }
+
+                .mastercardTile{
+                    position: absolute;
+                    right: -4rem;
+                    top:10rem;
+                    width: 20rem;
+                }
+
+                .statTile{
+                    position: absolute;
+                    bottom: 0; 
+                    height: 15rem;
+                    width: 20rem;
+                    right: 0;
+                }
+              
+                
+            }
+
+        }
+
+        &--right-container{
+         
+            width: 30rem;
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+
+            p{
+                // font-size: 1.6875re;
+                // font-size: 1.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 137%;
+            }
+
+            button{
+                width: max-content;
+            }
+
+            .desc-container{
+                margin-top: 10rem;
+               
+                display: flex;
+                flex-direction: column;
+                gap:2rem;
+
+                &__desc{
+                    display: flex;
+                    gap:2rem;
+              
+
+                    img{
+                        width: 3rem;
+                    }
+
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        gap:1rem;
+                        h1{
+                            
+                                font-size: 2rem;
+                           font-family: 'cera-bold';
+                           
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
+    &__control-showcase-container{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+     
+
+        &--left-container{
+          
+            width: 35rem;
+            position: relative;
+          
+         
+
+            .tiles-container{
+                display: flex;
+                gap: 1rem;
+
+                &__tile{
+                    
+                    width: 21.625rem;
+height: max-content;
+
+display: flex;
+flex-direction: column;
+
+gap: 1rem;
+padding-left: 1rem;
+border-radius: 0.5rem;
+
+img{
+    width: 1.5rem;
+}
+
+&--amount{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    gap:1rem
+}
+
+&:nth-child(1){
+    background-color: black;
+    color: white;
+}
+
+&:nth-child(2){
+    background-color: white;
+    color: black;
+box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.06);
+}
+                }
+            }
+
+            .chart{
+             
+                // margin: 0;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit:cover;
+                }
+               
+                
+            }
+        }
+
+
+
+        &--right-container{
+         
+            width: 35rem;
+   
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+
+            h1{
+                font-size: 3rem;
+           font-family: 'cera-bold';
+           font-weight: 700;
+line-height: 107.2%;
+           }
+
+
+           .bullet-point{
+            img{
+                width: 1rem;
+            }
+            display: flex;
+            align-items: center;
+            gap:1rem
+           }
+
+        }
+      
+    }
+
+
+}
