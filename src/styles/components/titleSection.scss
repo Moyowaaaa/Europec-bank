@@ -18,9 +18,7 @@
 
   position: relative;
 
-  @media screen and (min-width: 1024px) {
-    background-attachment: fixed;
-  }
+
 
   &__page-container {
     padding-top: 10vh;
@@ -72,7 +70,7 @@
           align-items: center;
           justify-content: center;
           img {
-            height: 5rem;
+            height: 4rem;
           }
         }
       }
@@ -94,6 +92,8 @@
     padding-left: 5rem;
     padding-right: 5rem;
     bottom: 0rem;
+
+    
 
     img {
       // width: ;
@@ -140,7 +140,18 @@
         }
       }
     }
-    &__partners-container,
+    &__partners-container{
+      width: 100%;
+      overflow-x: scroll;
+      padding: 2.5rem;
+
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+
+    }
     &__cards-container {
       display: none;
     }
@@ -149,7 +160,19 @@
 
 @media screen and (min-width: 495px) and (max-width: 1020px) {
   .titleSection {
-    &__partners-container,
+    &__partners-container{
+      width: 100%;
+      overflow-x: scroll;
+      padding: 2.5rem;
+
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+
+    }
+
     &__cards-container {
       display: none;
     }

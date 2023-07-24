@@ -2,23 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon-16x16.png"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Europec" />
 
@@ -28,6 +11,7 @@
     <meta property="og:url" content="https://europec.vercel.app/" />
     
     <title>Europec</title>
+    <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="styles/index.scss" />
    
   </head>
@@ -40,10 +24,10 @@
         </div>
 
         <div class="navbar__links-container">
-          <a>Home</a>
-          <a>Features</a>
-          <a>About us</a>
-          <a>Contact</a>
+          <a class="hoverLink">Home</a>
+          <a class="hoverLink">Features</a>
+          <a class="hoverLink">About us</a>
+          <a class="hoverLink">Contact</a>
 
           </div>  
 
@@ -54,15 +38,20 @@
 
         <div class="titleSection__page-container">
         <div class="titleSection__page-container--container">
-          <h1>Get the <span class="highlightText">convenience</span> of transacting with Europec.</h1>
+          <h1 id="titleHead">Get the <span class="highlightText">convenience</span> of transacting with Europec.</h1>
 
           <p>You no longer need to go home or go to the bank to do this. Only through this platform, all financial activities can be completed.</p>
 
           <div class="titleSection__page-container--container__buttons">
             <button class="join">Join Us</button>
             
-            <button class="down"><img src="./assets/images/downArrow.svg" alt=""/>
-              </button>
+            <button class="down" onclick="(function() {
+              document.querySelector('#subSection')?.scrollIntoView({
+                behavior: 'smooth'
+              });
+            })()"><img src="./assets/images/downArrow.svg" alt=""/></button>
+            
+
           </div>
           </div>
         </div>
@@ -89,9 +78,9 @@
     
   
 
-    <section class="subSection">
+    <section class="subSection" id="subSection">
 
-      <img src="./assets/images/subHorizontalLine.svg" id="subHorizontalLine"/>
+      <img src="./assets/images/subHorizontalLine.svg" id="subHorizontalLine" alt=""/>
 
     <div class="subSection__section-container">
       <div class="subSection__section-container--hero-text-container">
@@ -109,15 +98,15 @@
       </div>
 
       <div class="subSection__section-container--management-text-container">
-        <img src="./assets/images/wave.svg"/>
+        <img src="./assets/images/wave.svg" alt=""/>
 
         <h1>Management</h1>
 
-        <p>Drive perfromance and also continues to inovate to develop products that are in line with the times to meet user needs.</p>
+        <p>Drive performance and also continues to inovate to develop products that are in line with the times to meet user needs.</p>
         </div>
 
         <div class="subSection__section-container--transaction-text-container">
-          <img src="./assets/images/send.svg"/>
+          <img src="./assets/images/send.svg" alt=""/>
   
           <h1>Transactions</h1>
   
@@ -153,7 +142,10 @@
             <div class="desc-container">
 
               <div class="desc-container__desc">
-                <img src="./assets/images/rocket.svg" alt="" />
+                <div class="box">
+<img src="./assets/images/rocketIcon.svg" class="rocket" alt=""/>
+                </div>
+                <!-- <img src="./assets/images/rocket.svg" alt="" /> -->
                 <div class="text">
                   <h1>Streamlined Launch</h1>
                   <p>Smooths the path to launch and streamlined banking relationships.</p>
@@ -161,7 +153,12 @@
               </div>
 
               <div class="desc-container__desc">
-                <img src="./assets/images/signal.svg" alt="" />
+                <!-- <img src="./assets/images/signal.svg" alt="" /> -->
+                <div class="box">
+                  
+                  <img src="./assets/images/step.svg" class="step"/>
+                  <img src="./assets/images/signalBars.svg" class="bar"/>
+                                  </div>
                 <div class="text">
                   <h1>Built for Growth</h1>
                   <p>Built to grow, scale, and adapt with your business’s needs.</p>
@@ -203,7 +200,7 @@
            <img src="./assets/images/mobileChart.svg" class="mobile" alt="" />
           </div>
 
-          <div class="showcaseSection__control-showcase-container--right-container">
+          <div class="showcaseSection__control-showcase-container--right-container" id="controlFeatures">
             <h1>Europec Controls Your Expenses And Finances <span class="highlightText">Adequately</span></h1>
             <p>Tracking your cash flow allows you to compare your monthly expenses and identify areas where changes are needed.</p>
 
@@ -355,25 +352,25 @@
                 </div>
                 <div class="top-container__second-container">
                   <p>About Us</p>
-                  <p>Payment </p>
-                  <p>Track Record</p>
-                  <p>Resources</p>
+                  <p class="hoverLink">Payment </p>
+                  <p class="hoverLink">Track Record</p>
+                  <p class="hoverLink">Resources</p>
                 </div>
                 <div class="top-container__third-container">
                   <p>Media</p>
-                  <p>Development</p>
-                  <p>Privacy Policy</p>
-                  <p>Terms & Condition</p>
+                  <p class="hoverLink">Development</p>
+                  <p class="hoverLink">Privacy Policy</p>
+                  <p class="hoverLink">Terms & Condition</p>
                 </div>
                 <div class="top-container__fourth-container">
                   <p>Pricing</p>
-                  <p>About Product</p>
-                  <p>Management</p>
-                  <p>Money Access</p>
+                  <p class="hoverLink">About Product</p>
+                  <p class="hoverLink">Management</p>
+                  <p class="hoverLink">Money Access</p>
                 </div>
                 <div class="top-container__fifth-container">
                   <p>Reach Us</p>
-                  <p>europec@gmail.com</p>
+                  <p class="hoverLink">europec@gmail.com</p>
                   <p>+234 903233023</p>
                 </div>
 
@@ -382,14 +379,14 @@
                 </div>
               <div class="bottom-container">
 
-                <p>Copyright 2022 Europec. All Right Reserved</p>
+                <p>Copyright <span id="year"></span> Europec. All Right Reserved</p>
 
 
                 <div class="bottom-container__links-container">
-                  <p>Terms & Condition</p>
-                  <p>Privacy</p>
-                  <p>Policy Legal</p>
-                  <p>Copyright 2022 Europec. All Right Reserved</p>
+                  <p class="hoverLink">Terms & Conditions</p>
+                  <p class="hoverLink">Privacy</p>
+                  <p class="hoverLink">Policy Legal</p>
+                  <p>Copyright&nbsp;<span id="year"></span>&nbsp;Europec.</p>
                 </div>
               </div>
 
