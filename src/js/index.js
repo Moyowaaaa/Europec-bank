@@ -36,12 +36,15 @@ const titleTextContainer = document.querySelector(".title-cont");
 const partnersMarquee = document.querySelector(".partners");
 const titleTl = gsap.timeline();
 
+intersectionObserver(titleTextContainer, { threshold: 0.8 }).then(() => {
 gsap.from(navbar.children, {
   yPercent: 200,
   ease: "power3.inOut",
   duration: 1.2,
   opacity: 0,
 });
+})
+
 intersectionObserver(titleTextContainer, { threshold: 0.8 }).then(() => {
   gsap.from(titleTextContainer.children, {
     yPercent: 200,
@@ -207,6 +210,7 @@ intersectionObserver(jumbrtronPhone, { threshold: 0.1 }).then(() => {
     ease: "power3.inOut",
     scrollTrigger: {
       trigger: jumbrtronPhone,
+
     },
   });
 });
@@ -243,6 +247,13 @@ gsap.from(quotesBanner.children[0].children, {
   ease: "power3.inOut",
   duration: 1,
   stagger: 0.1,
+  scrollTrigger:{
+    trigger:quotesBanner.children[0].children,
+    scrub:0.5,
+    start: "top bottom+=90%",
+    end: "center+=20 top+=10%",
+    
+  }
 });
 
 gsap.from(quotesBanner.children[1].children[0], {
@@ -250,6 +261,9 @@ gsap.from(quotesBanner.children[1].children[0], {
   duration: 2,
   ease: "power3.inOut",
   opacity: 0,
+  scrollTrigger:{
+    trigger:quotesBanner.children[1].children[0],
+  }
 });
 
 // ----

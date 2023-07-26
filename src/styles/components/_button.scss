@@ -7,11 +7,20 @@
   background: #9dfa6f;
   font-style: normal;
   font-weight: 600;
-  cursor: pointer;
+  border: 2px solid #9dfa6f;
+  transition: .3s ease-in-out;
+  
+
+  &:hover{
+    border: 2px solid transparent;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    
+  }
 
 }
 
-.b-button {
+.b-button  {
   padding: 1rem 1rem;
 
   display: flex;
@@ -21,8 +30,18 @@
   color: white;
   font-style: normal;
   font-weight: 600;
-  cursor: pointer;
 
+  border: 2px solid black;
+  transition: .3s ease-in-out;
+  
+
+  &:hover{
+    border: 2px solid transparent;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    background-color: transparent;
+    color:black
+  }
 
   
 }
@@ -39,6 +58,18 @@
   font-weight: 600;
   cursor: pointer;
 
+  border: 2px solid black;
+  transition: .3s ease-in-out;
+  
+
+  &:hover{
+    border: 2px solid transparent;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+
+    background-color: transparent;
+    color:black
+  }
 }
 
 .t-button {
@@ -50,6 +81,34 @@
   font-style: normal;
   border: 1px solid #cbcbcb;
   font-weight: 600;
+  transition: .1s ease-in-out;
   cursor: pointer;
+  
 
+  &:hover{
+    border: 2px solid transparent;
+    // border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    background-color: transparent;
+    color:black
+  }
+}
+
+
+.join, .down{
+  background-color: green ;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+  border: 2px solid transparent;
+  
+
+  &:hover{
+    border: 2px solid transparent;
+    background: transparent !important;
+    color: black;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    background-color: transparent;
+    color:black !important
+  }
 }
