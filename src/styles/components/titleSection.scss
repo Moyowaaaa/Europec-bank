@@ -9,10 +9,10 @@
   min-height: max-content;
   width: 100%;
   max-height: max-content;
-  background-image: url("../../assets/images/blackStar.webp"),
-    url("../../assets/images/greenEllipse.webp"),
-    url("../../assets/images/bigEcllipse.webp"),
-    url('../../assets/images/greenStar.webp');
+  background-image: url("../assets/images/blackStar.webp"),
+  url("../assets/images/greenEllipse.webp"),
+  url("../assets/images/bigEcllipse.webp"),
+  url('../assets/images/greenStar.webp');
   background-repeat: no-repeat;
   background-position: 5rem 5rem, 2.5rem 60vh, center -5vh, 95% 5rem;
   background-size: auto, auto, 40rem, auto;
