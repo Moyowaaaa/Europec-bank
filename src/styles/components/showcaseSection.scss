@@ -6,6 +6,9 @@
   padding: 4rem 5rem;
   gap: 5rem;
 
+  width: 100%;
+  overflow-x: hidden;
+
   &__finance-showcase-container {
     display: flex;
     justify-content: space-between;

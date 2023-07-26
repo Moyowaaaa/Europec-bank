@@ -24,7 +24,7 @@ const scrollFn = (time) => {
 requestAnimationFrame(scrollFn);
 
 var viewport = window.innerWidth;
-var mobile = 480;
+var mobile = 1023;
 
 // ----top Section Animations --- //
 
@@ -76,6 +76,7 @@ titleTl
     "<0.1"
   );
 
+  if (viewport > mobile) {
 gsap.from(partnersMarquee, {
   xPercent: -50,
   opacity: 0,
@@ -89,6 +90,7 @@ gsap.from(partnersMarquee, {
     end: "center top+=20%",
   },
 });
+  }
 
 const subContainer = document.querySelector(".subSection__section-container");
 const subTitleContainer = document.querySelector(
