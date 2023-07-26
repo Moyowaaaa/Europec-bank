@@ -8,6 +8,9 @@
   align-items: center;
   font-style: normal;
   font-weight: 600;
+  min-height: 5rem;
+  max-height: max-content;
+  overflow-y: hidden;
 
   &__logo-container {
     img {

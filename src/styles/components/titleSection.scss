@@ -18,8 +18,6 @@
 
   position: relative;
 
-
-
   &__page-container {
     padding-top: 10vh;
     width: 100%;
@@ -30,10 +28,18 @@
     display: flex;
     padding-bottom: 15rem;
 
+    .title-p-cont {
+      @media screen and (min-width: 1023px) {
+        height: max-content;
+        overflow-y: hidden;
+      }
+    }
+
     &--container {
       display: flex;
       flex-direction: column;
       gap: 3rem;
+      overflow-y: hidden;
 
       h1 {
         font-size: 4rem;
@@ -70,7 +76,7 @@
           align-items: center;
           justify-content: center;
           img {
-            height: 4rem;
+            height: 3rem;
           }
         }
       }
@@ -86,14 +92,15 @@
     background-color: black;
     position: absolute;
     bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
     padding-left: 5rem;
     padding-right: 5rem;
     bottom: 0rem;
 
-    
+    .partners {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+    }
 
     img {
       // width: ;
@@ -140,17 +147,14 @@
         }
       }
     }
-    &__partners-container{
+    &__partners-container {
       width: 100%;
       overflow-x: scroll;
       padding: 2.5rem;
 
-
       &::-webkit-scrollbar {
         display: none;
       }
-
-
     }
     &__cards-container {
       display: none;
@@ -160,21 +164,41 @@
 
 @media screen and (min-width: 495px) and (max-width: 1020px) {
   .titleSection {
-    &__partners-container{
+    &__partners-container {
       width: 100%;
       overflow-x: scroll;
       padding: 2.5rem;
 
-
       &::-webkit-scrollbar {
         display: none;
       }
-
-
     }
 
     &__cards-container {
       display: none;
     }
+  }
+}
+
+.title-cont {
+  max-height: 25rem;
+  overflow-y: hidden;
+
+  @media screen and (min-width: 1023px) {
+    max-height: max-content;
+
+    overflow-y: hidden;
+  }
+}
+
+
+.section-titles-cont {
+  max-height: 25rem;
+  overflow-y: hidden;
+
+  @media screen and (min-width: 1023px) {
+    max-height: max-content;
+
+    overflow-y: hidden;
   }
 }

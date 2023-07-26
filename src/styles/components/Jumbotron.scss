@@ -95,12 +95,25 @@
   .sayer {
     display: flex;
     align-items: center;
+ 
+    max-width: 22rem;
+    // justify-content: end;
     gap: 1rem;
     padding-top: 2rem;
     font-weight: 600;
     font-size: 1.6rem;
+    position: relative;
     img {
       width: 10rem;
+    }
+    p{
+      @media screen and (min-width:1023px) {
+        justify-self: flex-end;
+        position: absolute;
+        right:0   
+      }
+     
+
     }
   }
 }
