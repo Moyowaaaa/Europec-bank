@@ -213,3 +213,21 @@
     overflow-y: hidden;
   }
 }
+
+
+@media only screen
+and (device-width: 375px)
+and (device-height: 812px)
+and (-webkit-device-pixel-ratio: 3) {
+  /* CSS rules specific to iPhone X */
+  .down{
+    img{
+      max-width: 3rem;
+      max-height: 3rem;
+    }
+     
+  }
+
+
+}
+
