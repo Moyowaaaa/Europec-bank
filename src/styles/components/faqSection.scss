@@ -79,12 +79,18 @@
 
     &__buttons-section {
       overflow-x: scroll;
-      padding-left: 26rem;
+      padding-left: 20rem;
+      // padding-right: 26rem;
+      
     
       width: 100%;
 
       button {
         min-width: max-content;
+
+        &:nth-child(6){
+          display: none;
+        }
       }
     }
     ::-webkit-scrollbar {
