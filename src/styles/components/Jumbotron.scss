@@ -154,8 +154,14 @@
   .quoteJumbotron {
     padding: 4rem 1rem;
 
+    @media screen and (max-width:490px) {
+      padding: 6rem 1rem;
+      height: max-content;
+      
+    }
+
     h1 {
-      font-size: 1.5rem;
+      font-size: 3rem;
       max-width: 100%;
     }
 

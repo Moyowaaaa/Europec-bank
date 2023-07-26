@@ -82,6 +82,7 @@
 
       button {
         width: max-content;
+        display: flex;
       }
 
       .desc-container {
@@ -244,7 +245,7 @@ height: 1.869rem;
     gap: 0;
 
     &__finance-showcase-container {
-      flex-direction: column-reverse;
+      flex-direction: column;
       gap: 4rem;
 
       &--left-container {
@@ -265,10 +266,8 @@ height: 1.869rem;
           }
 
           .mobile {
-            display: flex;
-            height: 90%;
-            width: 100%;
-            object-fit: cover;
+            margin-top: 4rem;
+            object-fit: contain;
           }
         }
       }
@@ -278,6 +277,7 @@ height: 1.869rem;
         .desc-container {
           margin-top: 2rem;
           &__desc {
+
             align-items: start;
             .text {
               h1 {
