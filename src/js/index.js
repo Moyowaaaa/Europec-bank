@@ -36,14 +36,12 @@ const titleTextContainer = document.querySelector(".title-cont");
 const partnersMarquee = document.querySelector(".partners");
 const titleTl = gsap.timeline();
 
-
 gsap.from(navbar.children, {
   yPercent: 200,
   ease: "power3.inOut",
   duration: 1.2,
   opacity: 0,
 });
-
 
 intersectionObserver(titleTextContainer, { threshold: 0.8 }).then(() => {
   gsap.from(titleTextContainer.children, {
@@ -75,8 +73,6 @@ titleTl
     },
     "<0.1"
   );
-
-
 
 const subContainer = document.querySelector(".subSection__section-container");
 const subTitleContainer = document.querySelector(
@@ -196,7 +192,9 @@ intersectionObserver(jumbrtronPhone, { threshold: 0.1 }).then(() => {
     ease: "power3.inOut",
     scrollTrigger: {
       trigger: jumbrtronPhone,
-
+      scrub: 0.1,
+      start: "top bottom+=20%",
+      end: "center top+=20%",
     },
   });
 });
@@ -233,14 +231,12 @@ gsap.from(quotesBanner.children[0].children, {
   ease: "power3.inOut",
   duration: 1,
   stagger: 0.1,
-  scrollTrigger:{
-    trigger:quotesBanner.children[0].children,
+  scrollTrigger: {
+    trigger: quotesBanner.children[0].children,
     // scrub:0.1,
     start: "top bottom+=20%",
     end: "top+=20 top+=20%",
-
-    
-  }
+  },
 });
 
 gsap.from(quotesBanner.children[1].children[0], {
@@ -248,9 +244,9 @@ gsap.from(quotesBanner.children[1].children[0], {
   duration: 2,
   ease: "power3.inOut",
   opacity: 0,
-  scrollTrigger:{
-    trigger:quotesBanner.children[1].children[0],
-  }
+  scrollTrigger: {
+    trigger: quotesBanner.children[1].children[0],
+  },
 });
 
 // ----
@@ -275,7 +271,6 @@ gsap.from(subscribeContainer.children[0].children, {
   },
 });
 
-
 ///
 
 const year = document.querySelectorAll("#year");
@@ -284,10 +279,7 @@ year.forEach((y) => {
   y.innerHTML = new Date().getFullYear();
 });
 
-
-
 // device based animation
-
 
 if (viewport > mobile) {
   gsap.from(partnersMarquee, {
@@ -305,19 +297,17 @@ if (viewport > mobile) {
   });
 }
 
-if(mobile > viewport) {
+if (mobile > viewport) {
   gsap.from(quotesBanner.children[0].children, {
     yPercent: 200,
     opacity: 0,
     ease: "power3.inOut",
     duration: 1,
     stagger: 0.1,
-    scrollTrigger:{
-      trigger:quotesBanner.children[0].children,
+    scrollTrigger: {
+      trigger: quotesBanner.children[0].children,
       start: "top bottom+=90%",
       end: "center+=20 top+=10%",
-      
-    }
+    },
   });
 }
-
