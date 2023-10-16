@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Europec" />
-
-  
+    <meta
+    name="description"
+    content="Finacial Experience built for tomorrow"
+  />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Europec " />
     <meta property="og:url" content="https://europec.vercel.app/" />
-    
     <title>Europec</title>
     <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="styles/index.scss" />
@@ -31,7 +32,7 @@
 
           </div>  
 
-          <button class="g-button">Get Started</button>
+          <button aria-label="get started?" class="g-button">Get Started</button>
 
 
         </nav>
@@ -50,9 +51,9 @@
         
 
           <div class="titleSection__page-container--container__buttons" id="buttons">
-            <button class="join">Join Us</button>
+            <button aria-label="join" class="join">Join Us</button>
             
-            <button class="down" onclick="(function() {
+            <button class="down" aria-label="down" onclick="(function() {
               document.querySelector('#subSection')?.scrollIntoView({
                 behavior: 'smooth'
               });
@@ -108,7 +109,7 @@
    
 
         <div class="heroButtons">
-          <button class="b-button">Get Started</button>
+          <button class="b-button" aria-label="get started?">Get Started</button>
           
 
           <button class="w-button">Browse Features</button>
@@ -178,8 +179,8 @@
               <div class="desc-container__desc">
                 <div class="box">
                   
-                  <img src="./assets/images/step.svg" class="step"/>
-                  <img src="./assets/images/signalBars.svg" class="bar"/>
+                  <img src="./assets/images/step.svg" class="step"      alt=""/>
+                  <img src="./assets/images/signalBars.svg" class="bar" alt=""/>
                                   </div>
                 <div class="text">
                   <h1>Built for Growth</h1>
@@ -375,7 +376,7 @@
                 </div>
 
                 <div class="subscribeSection__container--input-container">
-                  <input type="text" class="input"/>
+                  <input type="text" class="input" aria-label="email"/>
                   <button class="register">Register</button>
                 </div>
               </div>
